@@ -1,83 +1,32 @@
-# **Take-Home Test: Backend-Focused Full-Stack Developer (.NET C# & Angular)**
+# **For backend**
+can open the terminal in the root folder of the backed project and run
+1- docker-compose build 
+2- docker-compose up
+3- select docker in the launch option
 
-## **Objective**
+or just select the profile docker-compse and vs studio will do the build and up the container and start the app
+![image](https://github.com/user-attachments/assets/d41dc71c-68b9-4e48-9325-1a049c974c89)
 
-This take-home test evaluates your ability to develop and integrate a .NET Core (C#) backend with an Angular frontend, focusing on API design, database integration, and basic DevOps practices.
+## **Generate token to test GetLoanById**
+This is the way to generate a token to have access to the endpoint GetLoanById
+use the same pass and user in the image
 
-## **Instructions**
+![image](https://github.com/user-attachments/assets/b97260bb-6e4b-4161-bab8-14e8fb3e0f54)
 
-1.  **Fork the provided repository** before starting the implementation.
-2.  Implement the requested features in your forked repository.
-3.  Once you have completed the implementation, **send the link** to your forked repository via email for review.
+## **Implementation**
 
-## **Task**
+I implementes clear arquitectire, i created 3 more layers application, domain, infrastructure, the following packages were used:
+mediatR,entity framework, automapper and other, also implementes authentication, logging. there is a container for mssql for managing the data.
 
-You will build a simple **Loan Management System** with a **.NET Core backend (C#)** exposing RESTful APIs and a **basic Angular frontend** consuming these APIs.
 
----
+## **For Frontend**
 
-## **Requirements**
+go to the root of the project, open the terminal al run ng serve, that will start the server
 
-### **1. Backend (API) - .NET Core**
+![image](https://github.com/user-attachments/assets/b2c13d64-0497-4c6f-9fd1-103de7082675)
 
-* Create a **RESTful API** in .NET Core to handle **loan applications**.
-* Implement the following endpoints:
-    * `POST /loans` → Create a new loan.
-    * `GET /loans/{id}` → Retrieve loan details.
-    * `GET /loans` → List all loans.
-    * `POST /loans/{id}/payment` → Deduct from `currentBalance`.
-* Loan example (feel free to improve it):
 
-    ```json
-    {
-        "amount": 1500.00, // Amount requested
-        "currentBalance": 500.00, // Remaining balance
-        "applicantName": "Maria Silva", // User name
-        "status": "active" // Status can be active or paid
-    }
-    ```
 
-* Use **Entity Framework Core** with **SQL Server**.
-* Create seed data to populate the loans (the frontend will consume this).
-* Write **unit/integration tests for the API** (xUnit or NUnit).
-* **Dockerize** the backend and create a **Docker Compose** file.
-* Create a README with setup instructions.
-
-### **2. Frontend - Angular (Simplified UI)**  
-
-Develop a **lightweight Angular app** to interact with the backend
-
-#### **Features:**  
-- A **table** to display a list of existing loans.  
-
-#### **Mockup:**  
-[View Mockup](https://kzmgtjqt0vx63yji8h9l.lite.vusercontent.net/)  
-(*The design doesn’t need to be an exact replica of the mockup—it serves as a reference. Aim to keep it as close as possible.*)  
-
----
-
-## **Bonus (Optional, Not Required)**
-
-* **Improve error handling and logging** with structured logs.
-* Implement **authentication**.
-* Create a **GitHub Actions** pipeline for building and testing the backend.
-
----
-
-## **Evaluation Criteria**
-
-✔ **Code quality** (clean architecture, modularization, best practices).
-
-✔ **Functionality** (the API and frontend should work as expected).
-
-✔ **Security considerations** (authentication, validation, secure API handling).
-
-✔ **Testing coverage** (unit tests for critical backend functions).
-
-✔ **Basic DevOps implementation** (Docker for backend).
-
----
 
 ## **Additional Information**
-
-Candidates are encouraged to include a `README.md` file in their repository detailing their implementation approach, any challenges they faced, features they couldn't complete, and any improvements they would make given more time. Ideally, the implementation should be completed within **two days** of starting the test.
+the only feature i could not complete was the integration test, i only had 1 day and a half of my time to complete the assigment before going for long weekend i had planed with the family and return to my house on tuesday, i did't have enough time.
