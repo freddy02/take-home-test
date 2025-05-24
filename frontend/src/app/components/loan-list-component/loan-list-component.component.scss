@@ -8,7 +8,10 @@
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   font-family: Arial, sans-serif;
-  justify-content: center;
+  align-items: center;
+  h1 {
+    display: flex;
+  }
 }
 
 .loan-row {
