@@ -7,13 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundo.Applications.WebApi",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundo.Services.Tests", "Fundo.Services.Tests\Fundo.Services.Tests.csproj", "{2AF827DF-3DE1-4317-8B8E-C0CEED845186}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundo.Applications.Domain", "Fundo.Applications.Domain\Fundo.Applications.Domain.csproj", "{F714B367-9274-4A14-A44D-04440A60DDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundo.Applications.Infrastructure", "Fundo.Applications.Infrastructure\Fundo.Applications.Infrastructure.csproj", "{D7DA6FAC-014A-462A-9AB4-16A3E88CFD42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundo.Applications.Application", "Fundo.Applications.Application\Fundo.Applications.Application.csproj", "{40722296-D696-4CD1-AA65-4E7E9C9CCCC5}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{74E9501B-3D70-4E87-8D1D-874F54DBF3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +29,27 @@ Global
 		{2AF827DF-3DE1-4317-8B8E-C0CEED845186}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF827DF-3DE1-4317-8B8E-C0CEED845186}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF827DF-3DE1-4317-8B8E-C0CEED845186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F714B367-9274-4A14-A44D-04440A60DDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F714B367-9274-4A14-A44D-04440A60DDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F714B367-9274-4A14-A44D-04440A60DDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F714B367-9274-4A14-A44D-04440A60DDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7DA6FAC-014A-462A-9AB4-16A3E88CFD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7DA6FAC-014A-462A-9AB4-16A3E88CFD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7DA6FAC-014A-462A-9AB4-16A3E88CFD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7DA6FAC-014A-462A-9AB4-16A3E88CFD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40722296-D696-4CD1-AA65-4E7E9C9CCCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40722296-D696-4CD1-AA65-4E7E9C9CCCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40722296-D696-4CD1-AA65-4E7E9C9CCCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40722296-D696-4CD1-AA65-4E7E9C9CCCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB789C01-81F4-4356-A772-40D87C0E5272}
 	EndGlobalSection
 EndGlobal

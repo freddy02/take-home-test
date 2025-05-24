@@ -1,0 +1,19 @@
+<div class="loan-flex-table">
+  <h1>Loan Management</h1>
+  <div class="loan-row loan-header">
+    <div class="loan-cell">Loan Amount</div>
+    <div class="loan-cell">Current Balance</div>
+    <div class="loan-cell">Applicant</div>
+    <div class="loan-cell">Status</div>
+  </div>
+
+  <!-- Rows -->
+  <div class="loan-row" *ngFor="let loan of loans">
+    <div class="loan-cell">{{ loan.amount | currency }}</div>
+    <div class="loan-cell">{{ loan.currentBalance | currency }}</div>
+    <div class="loan-cell">{{ loan.applicantName }}</div>
+    <div class="loan-cell" [ngClass]="loan.status">
+      {{ loan.status }}
+    </div>
+  </div>
+</div>
